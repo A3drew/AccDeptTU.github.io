@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting - Trinity University</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        
+        <nav>
+            <a href="https://www.trinityuniversity.edu.ng/"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="study.html">STUDY</a></li>
+                    <li><a href="faculty.html">FACULTY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>
+    </section>
+    
+    
+<!------- Contact Us ------->
+
+    
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3964.1279235399666!2d3.3816058!3d6.5054866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d6551f3e79d%3A0x2c090ab2140c87db!2sTRINITY%20UNIVERSITY%20CAMPUS!5e0!3m2!1sen!2sng!4v1657506741348!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>1 FFF Rd, Off Alara St, Near Queen's College</h5>
+                            <p>Sabo yaba 100001, Lagos, Nigeria</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>07032166707, 07032167003</h5>
+                            <p>Monday to Friday 8 Am to 5 Pm</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>info@trinityuniversity.edu.ng</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form method="post" action="contact-form-handler.php">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form> 
+                </div>
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The TU Department of Accounting seeks to develop highly qualified graduates in the fields of accounting, taxation, entrepreneurship, <br>and financial management who will advance accounting knowledge via research and publishing and <br>raise the standard of professional practice in Nigeria and beyond.</p>
+    <div class="icons">
+        <a href="https://web.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        
+    </div>
+    <p>Made With <i class="fa fa-heart-o"> </i> by <i class="fa fa-users"></i> Group 4</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
